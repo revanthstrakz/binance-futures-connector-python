@@ -745,3 +745,29 @@ def commission_rate(self, symbol: str, **kwargs):
     params = {"symbol":symbol, **kwargs}
 
     return self.sign_request("GET", url_path, params)
+
+
+def transfer(self, **kwargs):
+    """
+    |
+    | **User Commission Rate (USER_DATA)**
+    | *Get commission rate of symbol*
+
+    :API endpoint: ``GET /fapi/v1/commissionRate``
+    :API doc: https://binance-docs.github.io/apidocs/futures/en/#user-commission-rate-user_data
+
+    :parameter symbol: string
+    :parameter recvWindow: optional int
+    |
+    """
+
+    
+    url_path = "/sapi/v1/futures/transfer"
+    params = {**kwargs}
+
+    return self.sign_request("GET", url_path, params)
+
+def custom_api(self,url_path, **kwargs):
+    params = {**kwargs}
+
+    return self.sign_request("GET", url_path, params)
