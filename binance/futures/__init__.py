@@ -63,6 +63,8 @@ class Futures(API):
     from binance.futures.account import force_orders
     from binance.futures.account import api_trading_status
     from binance.futures.account import commission_rate
+    from binance.futures.account import transfer
+    from binance.futures.account import custom_api
 
     # STREAMS
     from binance.futures.data_stream import new_listen_key
